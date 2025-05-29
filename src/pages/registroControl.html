@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz de Registro y Control</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="/src/css/registroControl.css">
+  <!-- SweetAlert2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn">☰</button>
+    <div>
+      <button class="header-btn">Contactanos</button>
+      <button class="header-btn">Reportar errores</button>
+      <button class="header-btn logout-btn">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <div class="title-container">
+    <h2 class="title">Interfaz de Registro y Control</h2>
+  </div>
+
+  <div class="main-container">
+    <!-- Panel Izquierdo -->
+    <div class="panel">
+      <h3>Registrar entrada/salida:</h3>
+      <div class="icons">
+        <div class="icon-box"><img
+            src="/src/icons/protection_security_finger_thumb_biometric_identity_identification_fingerprint_touch_icon_258661.png">
+        </div>
+        <div class="icon-box"><img src="/src/icons/thefullreflexcamera_slr_camera_4626.png"></div>
+      </div>
+      <button class="btn-beige">Registrar</button>
+      <button class="btn-gray enviar-reporte-btn">Enviar Reporte</button>
+    </div>
+
+    <!-- Panel Centro (Reporte) -->
+    <div class="panel">
+      <h3>Reporte:</h3>
+      <div class="report-box"></div>
+    </div>
+
+    <!-- Panel Derecho -->
+    <div class="panel">
+      <input class="input-emp" type="text" placeholder="Nombre completo del empleado...">
+      <div class="actions">
+        <button class="btn-beige">Ver registro de asistencia</button>
+        <button class="btn-beige">Calcular horas trabajadas</button>
+      </div>
+
+      <h3>Asistencias/horas:</h3>
+      <div class="asistencias-box">
+        (Empleado)<br />
+        Fecha | Asistencia<br />
+        Fecha | Asistencia<br />
+        Fecha | Asistencia<br />
+        Fecha | Asistencia<br />
+        Fecha | Asistencia
+      </div>
+
+      <div class="actions">
+        <button class="btn-beige generar-reporte-btn">Generar Reporte</button>
+        <button class="btn-beige guardar-horas-btn">Guardar cálculo de horas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/src/js/registroControl.js"></script>
+</body>
+
+</html>

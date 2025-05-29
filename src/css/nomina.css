@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/paper-fibers.png'), #f8f6f2;
+    background-size: cover;
+    padding: 20px;
+}
+
+header {
+    background-color: #b19174;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.menu-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background-color: black;
+    color: white;
+}
+
+.title-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.panel {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.input-emp {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #eae4dc;
+    margin-bottom: 15px;
+}
+
+.visual-box {
+    background-color: #ede6dd;
+    border-radius: 20px;
+    height: 280px;
+    margin-bottom: 15px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-beige {
+    background-color: #b19174;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-gray {
+    background-color: #7f7f7f;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin: -10px 0 10px;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid #ff6b6b !important;
+}
+
+.datos-historial-box {
+    min-height: 300px;
+    background-color: #f3f1ec;
+    border: 2px solid #b8b6f9;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .btn-gray {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Nómina</title>
+    <link rel="stylesheet" href="/src/css/nomina.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <header>
+        <button class="menu-btn">☰</button>
+        <div>
+            <button class="header-btn">Contactanos</button>
+            <button class="header-btn">Reportar errores</button>
+            <button class="header-btn logout-btn">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <div class="title-container">
+        <h2 class="title">Interfaz de Nómina</h2>
+    </div>
+
+    <div class="main-container">
+        <!-- Panel Izquierdo -->
+        <div class="panel">
+            <input type="text" class="input-emp" placeholder="Nombre completo del empleado...">
+            <div class="actions">
+                <button class="btn-beige consultar-datos-btn">Consultar datos</button>
+                <button class="btn-beige consultar-historial-btn">Consultar historial de pago</button>
+            </div>
+
+            <h3>Datos/Historial:</h3>
+            <div class="visual-box datos-historial-box"></div>
+
+            <button class="btn-beige calcular-pago-btn">Calcular/guardar pago</button>
+        </div>
+
+        <!-- Panel Centro -->
+        <div class="panel">
+            <h3>Recibo:</h3>
+            <div class="visual-box recibo-box"></div>
+
+            <div class="actions">
+                <button class="btn-beige generar-recibo-btn">Generar recibo</button>
+                <button class="btn-beige guardar-recibo-btn">Guardar recibo</button>
+            </div>
+        </div>
+
+        <!-- Panel Derecho -->
+        <div class="panel">
+            <input type="text" id="folio-input" class="input-emp" placeholder="Folio del recibo...">
+            <div class="error-message"></div>
+            <button class="btn-beige consultar-pago-btn">Consultar pago</button>
+
+            <h3>Descripción del pago:</h3>
+            <div class="visual-box descripcion-box"></div>
+
+            <button class="btn-gray enviar-recibo-btn">Enviar Recibo</button>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/src/js/nomina.js"></script>
+</body>
+
+</html>

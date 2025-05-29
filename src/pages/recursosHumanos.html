@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interfaz Recursos Humanos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="../css/RecursosHumanos.css">
+</head>
+
+<body>
+  <header>
+    <button class="menu-btn">☰</button>
+    <div>
+      <button class="header-btn">Contactanos</button>
+      <button class="header-btn">Reportar errores</button>
+      <button class="header-btn logout-btn">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <div class="title-container">
+    <h2 class="title">Interfaz de Recursos Humanos</h2>
+  </div>
+
+  <div class="main-container">
+    <div class="left-panel">
+      <h3>Consultar contrato:</h3>
+      <input type="text" placeholder="Nombre completo del empleado...">
+      <button class="buscar-btn">Buscar contrato</button>
+
+      <h3>Documentos adicionales del empleado:</h3>
+      <div class="subir-doc">⬆ Subir Documento</div>
+
+      <button class="enviar-btn">Enviar contrato</button>
+    </div>
+
+    <div class="right-panel">
+      <h3>
+        <span>Visualización</span>
+        <button class="modificar-btn">Modificar</button>
+      </h3>
+      <div class="visual-box"></div>
+      <button class="guardar-btn">Guardar modificación</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/recursosHumanos.js"></script>
+</body>
+
+</html>
