@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Redirecciones según el usuario
         if (usuario === 'mau@rh.com') {
-            window.location.href = '/src/pages/recursosHumanos.html';
+            window.location.href = 'src/pages/recursosHumanos.html';
         } else if (usuario === 'karen@nom.com') {
-            window.location.href = '/src/pages/nomina.html';
+            window.location.href = 'src/pages/nomina.html';
         } else if (usuario === 'isi@ryc.com') {
-            window.location.href = '/src/pages/registroControl.html';
+            window.location.href = 'src/pages/registroControl.html';
         } else {
             alert('Usuario no reconocido');
         }
